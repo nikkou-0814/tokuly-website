@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Color+Emoji&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <title>Tokuly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/" style="text-decoration: none; margin-top: -10px;">
+            <h2 class="tokuly">Tokuly</h2>
+        </a>
+        <a href="https://apps.apple.com/jp/app/tokuly/id6446301571" style="text-decoration: none; color: white; display: block; margin-left: auto; margin-right: 20px;">
+            <div class="dl">
+                <p>Download</p>
+            </div>
+        </a>
+    </header>
+
+    <div style="height: 60px;"></div>
+    <p class="counter">Current user <span id="user">100+</span></p>
+    <div class="imgs">
+        <img class="preimg" src="https://media.discordapp.net/attachments/1014197880317296690/1178037496131616768/image0.jpg?ex=6574afe9&is=65623ae9&hm=53cdf0b26e21aa5f2098348ad1a7f7d57582623e6699287db3dfae5d54d9febf&=&format=webp&width=588&height=1272">
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="links">
+            <a href="/about" class="link">
+                <p>About</p>
+            </a>
+            <a href="/login" class="link">
+                <p>Login</p>
+            </a>
+            <a href="/terms-of-service" class="link">
+                <p>Terms</p>
+            </a>
+            <a href="/privacy-policy" class="link">
+                <p>Policy</p>
+            </a>
+        </div>
+        <p class="madebylove">Made by Love ♥</p>
+    </footer>
+
+    <script>
+    function resizeWindow(){
+        document.getElementById("footer").style.width = window.innerWidth-20 + "px";
+    }
+    window.addEventListener('resize', resizeWindow);
+    resizeWindow();
+    </script>
+</body>
+</html>
