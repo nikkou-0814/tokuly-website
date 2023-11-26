@@ -166,7 +166,7 @@ body{
     position: relative;
 }
 
-.toptext{
+.toptext {
     display: flex;
     justify-content: center;
     margin-top: 50vh;
@@ -176,15 +176,15 @@ body{
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    background-size: 150% 100%;
+    background-position: 100% 0;
     transition: all 0.3s ease;
+    position: relative;
 }
 
-.toptext:hover{
+.toptext:hover {
     transform: rotate(-10deg) scale(1.1);
-    background: linear-gradient(to right, #f11a1a, #fbff00);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    background-position: left;
 }
 
 .dlbtn{
