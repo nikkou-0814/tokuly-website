@@ -10,18 +10,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <a href="/" style="text-decoration: none; margin-top: -10px;">
-            <h2 class="tokuly">Tokuly</h2>
+    <header class="header" id="headerjs">
+        <a href="/" style="text-decoration: none;">
+            <div class="tokulybtn" id="tokulybtn">
+                <h2 class="tokuly" id="tokulytext">Tokuly</h2>
+            </div>
         </a>
         <a href="https://apps.apple.com/jp/app/tokuly/id6446301571" style="text-decoration: none; color: white; display: block; margin-left: auto; margin-right: 20px;">
-            <div class="dl">
+            <div class="dl" id="dljs">
                 <p>Download</p>
             </div>
         </a>
     </header>
 
-    <div style="height: 60px;"></div>
+    <div class="top">
+        <h1 class="toptext">Your now to your friends.</h1>
+        <div class="dlbtn">
+            <a href="https://apps.apple.com/jp/app/tokuly/id6446301571" style="text-decoration: none;">
+                <div class="dltop">
+                    <p class="dltext">Get Now</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
     <p class="counter">Current user <span id="user">100+</span></p>
     <div class="imgs">
         <img class="preimg" src="https://media.discordapp.net/attachments/1014197880317296690/1178037496131616768/image0.jpg?ex=6574afe9&is=65623ae9&hm=53cdf0b26e21aa5f2098348ad1a7f7d57582623e6699287db3dfae5d54d9febf&=&format=webp&width=588&height=1272">
@@ -51,6 +63,37 @@
     }
     window.addEventListener('resize', resizeWindow);
     resizeWindow();
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // 下スクロール時のイベントリスナーを追加
+      window.addEventListener('scroll', function() {
+        // 現在のスクロール位置を取得
+        var scrollPosition = window.scrollY || window.pageYOffset;
+
+        // 下スクロール時の条件を設定
+        if (scrollPosition > 300) {
+          // 下スクロール時の処理
+          document.getElementById('tokulybtn').classList.remove('tokulybtn');
+          document.getElementById('tokulytext').classList.remove('tokuly');
+          document.getElementById('dljs').classList.remove('dl');
+          document.getElementById('headerjs').classList.remove('header');
+          document.getElementById('tokulybtn').classList.add('tokulybtns');
+          document.getElementById('tokulytext').classList.add('tokulys');
+          document.getElementById('dljs').classList.add('dls');
+          document.getElementById('headerjs').classList.add('headers');
+        } else {
+          // ページの一番上に戻ったときの処理
+          document.getElementById('tokulybtn').classList.remove('tokulybtns');
+          document.getElementById('tokulytext').classList.remove('tokulys');
+          document.getElementById('dljs').classList.remove('dls');
+          document.getElementById('headerjs').classList.remove('headers');
+          document.getElementById('tokulybtn').classList.add('tokulybtn');
+          document.getElementById('tokulytext').classList.add('tokuly');
+          document.getElementById('dljs').classList.add('dl');
+          document.getElementById('headerjs').classList.add('header');
+        }
+      });
+    });
     </script>
 </body>
 </html>
