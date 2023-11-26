@@ -176,11 +176,15 @@ body{
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
 }
 
 .toptext:hover{
     transform: rotate(-10deg) scale(1.1);
+    background: linear-gradient(to right, #f11a1a, #fbff00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .dlbtn{
