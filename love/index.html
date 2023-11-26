@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Color+Emoji&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>We are Love</title>
+</head>
+<body>
+    <div id="whiteblock"></div>
+    <div class="waltext">
+        <h1 class="wal" id="wal">We are Love ♥</h1>
+    </div>
+
+    <footer class="footer" id="footer" style="position: fixed; left: 10px; bottom: -30vh; transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1); background-color: rgb(0, 0, 0, 0.1);">
+        <div class="links">
+            <a href="/about" class="link">
+                <p style="color: black;">About</p>
+            </a>
+            <a href="/login" class="link">
+                <p style="color: black;">Login</p>
+            </a>
+            <a href="/terms-of-service" class="link">
+                <p style="color: black;">Terms</p>
+            </a>
+            <a href="/privacy-policy" class="link">
+                <p style="color: black;">Policy</p>
+            </a>
+        </div>
+        <a href="/love" class="madebylove" style="color: black;">Made by Love ♥</a>
+    </footer>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            var whiteblock = document.getElementById("whiteblock");
+            var wal = document.getElementById("wal");
+            whiteblock.style.top = "0";
+            wal.style.color = "black";
+            wal.innerHTML = "We Love You ♥";
+        }, 2000);
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            var footer = document.getElementById("footer");
+            footer.style.bottom = "0";
+        }, 3000);
+    });
+    </script>
+    <script src="../script.js"></script>
+</body>
+</html>
