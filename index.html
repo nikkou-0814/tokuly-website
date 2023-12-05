@@ -67,6 +67,12 @@
     </footer>
     <script src="script.js"></script>
     <script>
+    function resizeWindowToptext(){
+        document.getElementsByClassName("toptext")[0].style.marginTop = window.innerHeight/2 -100 + 'px';
+    }
+    window.addEventListener('resize', resizeWindowToptext);
+    resizeWindowToptext();
+    
     document.addEventListener('DOMContentLoaded', function() {
   // 下スクロール時のイベントリスナーを追加
     window.addEventListener('scroll', function() {

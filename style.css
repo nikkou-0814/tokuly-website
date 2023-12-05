@@ -175,6 +175,7 @@ body{
 .top{
     height: 50vh;
     position: relative;
+    margin-bottom: 100px;
 }
 
 .toptext {
