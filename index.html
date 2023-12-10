@@ -65,7 +65,16 @@
         </div>
         <a href="/love" class="madebylove">Made by Love ♥</a>
     </footer>
+
+    <div id="konamimain" class="konamihidden">
+        <p class="konamitext">Wow! I can't hide my amazement! I'm amazed you found it!</p>
+        <div class="konamiclosebtn" onclick="konamiclose(konamimain)">
+            <span style="margin-top: -10px;">&times;</span>
+        </div>
+    </div>
+
     <script src="script.js"></script>
+    <script src="../konamicommand.js"></script>
     <script>
     function resizeWindowToptext(){
         document.getElementsByClassName("toptext")[0].style.marginTop = window.innerHeight/2 -100 + 'px';

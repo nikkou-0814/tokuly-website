@@ -63,19 +63,38 @@
         <div class="teams">
             <h2 class="teamname">Tokuzou</h2>
             <p class="teamtext">Tokulyの <span class="emphasis">リーダー</span>的存在、なんでもしている。</p>
+            <div class="teamacc">
+                <a href="https://x.com/tokuchan0829">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="3vh" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#ffffff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                </a>
+            </div>
         </div>
-        <div class="line"></div>
         <div class="teams">
             <h2 class="teamname">Nikkou</h2>
             <p class="teamtext"><span class="emphasis">サイト</span>や<span class="emphasis">デザイン</span>系をやってる。</p>
+            <div class="teamacc">
+                <a href="https://x.com/nikkou0814">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="3vh" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#ffffff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                </a>
+            </div>
         </div>
-        <div class="line"></div>
         <div class="teams">
             <h2 class="teamname">Aomona</h2>
             <p class="teamtext"><span class="emphasis">アイコン</span>など <span class="emphasis">ちょっとした物</span>を担当してる。</p>
+            <div class="teamacc">
+                <a href="https://x.com/aomona_01">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="3vh" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#ffffff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                </a>
+            </div>
         </div>
-        <div class="line"></div>
         <div style="height: 10px;"></div>
+    </div>
+
+    <div id="konamimain" class="konamihidden">
+        <p class="konamitext">Wow! I can't hide my amazement! I'm amazed you found it!</p>
+        <div class="konamiclosebtn" onclick="konamiclose(konamimain)">
+            <span style="margin-top: -10px;">&times;</span>
+        </div>
     </div>
 
     <footer class="footer" id="footer">
@@ -96,6 +115,7 @@
         <a href="/love" class="madebylove">Made by Love ♥</a>
     </footer>
     <script src="../script.js"></script>
+    <script src="../konamicommand.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
   // 下スクロール時のイベントリスナーを追加

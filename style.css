@@ -13,7 +13,7 @@ body{
     height: 70px;
     left: 0;
     top: 0; 
-    background-color: rgb(0, 0, 0, 0.6);
+    background-color: rgb(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     z-index: 999999;
     transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
@@ -399,6 +399,27 @@ body{
     text-align: center;
 }
 
+.teams{
+    border-radius: 20px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin: 30px;
+    border: rgb(50, 50, 50) solid 1px;
+    padding: 5px;
+}
+
+.teams:hover{
+    animation: gradientAnimation 3s linear infinite;
+    box-shadow: 0px 0 30px 10px rgba(255, 255, 255, 0.3);
+    border: none;
+}
+
+.teams:not(:hover){
+    background: black;
+}
+
 .teamname{
     transition: all 0.5s;
     user-select: none;
@@ -417,6 +438,69 @@ body{
     .emphasis{
         transition: all 0.3s;
         font-weight: 900;
-        color: #e97878;
+        text-shadow: 0 0 20px rgb(255, 255, 255);
     }
+}
+
+.teamacc{
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 15px;
+    height: 40px;
+    width: 100px;
+    margin: 5px;
+    margin-top: -15px;
+}
+
+.teamacc svg:hover{
+    transform: scale(1.2);
+}
+
+.teamacc svg{
+    padding-top: 5px;
+    transition: all 0.3s;
+}
+
+.konamihidden {
+    position: fixed;
+    transition: all 0.5s;
+    bottom: -1000vh;
+}
+
+.konamivisible {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    top: 0;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.konamitext{
+    text-align: center;
+    transform: translateY(-50px);
+    font-size: 30px;
+    padding: 20px;
+}
+
+.konamiclosebtn{
+    position: absolute;
+    bottom: 40px;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #313131;
+    font-size: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.konamiclosebtn:hover{
+    transform: scale(1.2);
 }
