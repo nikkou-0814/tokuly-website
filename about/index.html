@@ -60,28 +60,28 @@
 
     <div class="ourteam" id="ourteam">
         <h1 style="font-size: 40px;">Team</h1>
-        <div class="teams">
-            <h2 class="teamname">Tokuzou</h2>
-            <p class="teamtext">Tokulyの <span class="emphasis">リーダー</span>的存在、なんでもしている。</p>
-            <div class="teamacc">
+        <div class="teams" id="teamsjstokuzou">
+            <h2 class="teamname" id="teamsnamejstokuzou">Tokuzou</h2>
+            <p class="teamtext" id="teamstextjstokuzou">Tokulyの <span class="emphasis">リーダー</span>的存在、なんでもしている。</p>
+            <div class="teamacc" id="teamaccjstokuzou">
                 <a href="https://x.com/tokuchan0829">
                     <svg xmlns="http://www.w3.org/2000/svg" height="3vh" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#ffffff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
                 </a>
             </div>
         </div>
-        <div class="teams">
-            <h2 class="teamname">Nikkou</h2>
-            <p class="teamtext"><span class="emphasis">サイト</span>や<span class="emphasis">デザイン</span>系をやってる。</p>
-            <div class="teamacc">
+        <div class="teams" id="teamsjsnikkou">
+            <h2 class="teamname" id="teamsnamejsnikkou">Nikkou</h2>
+            <p class="teamtext" id="teamstextjsnikkou"><span class="emphasis">サイト</span>や<span class="emphasis">デザイン</span>系をやってる。</p>
+            <div class="teamacc" id="teamaccjsnikkou">
                 <a href="https://x.com/nikkou0814">
                     <svg xmlns="http://www.w3.org/2000/svg" height="3vh" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#ffffff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
                 </a>
             </div>
         </div>
-        <div class="teams">
-            <h2 class="teamname">Aomona</h2>
-            <p class="teamtext"><span class="emphasis">アイコン</span>など <span class="emphasis">ちょっとした物</span>を担当してる。</p>
-            <div class="teamacc">
+        <div class="teams" id="teamsjsaomona">
+            <h2 class="teamname" id="teamsnamejsaomona">Aomona</h2>
+            <p class="teamtext" id="teamstextjsaomona"><span class="emphasis">アイコン</span>など <span class="emphasis">ちょっとした物</span>を担当してる。</p>
+            <div class="teamacc" id="teamaccjsaomona">
                 <a href="https://x.com/aomona_01">
                     <svg xmlns="http://www.w3.org/2000/svg" height="3vh" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#ffffff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
                 </a>
@@ -147,6 +147,51 @@
     }
   });
 });
+    </script>
+
+    <script>
+        function checkWindowSize() {
+            var windowWidth = window.innerWidth;
+
+            // ウィンドウの幅が500px未満の場合
+            if (windowWidth < 1000) {
+                document.getElementById('teamsjstokuzou').className = 'teams';
+                document.getElementById('teamsnamejstokuzou').className = 'teamname';
+                document.getElementById('teamstextjstokuzou').className = 'teamtext';
+                document.getElementById('teamaccjstokuzou').className = 'teamacc';
+
+                document.getElementById('teamsjsnikkou').className = 'teams';
+                document.getElementById('teamsnamejsnikkou').className = 'teamname';
+                document.getElementById('teamstextjsnikkou').className = 'teamtext';
+                document.getElementById('teamaccjsnikkou').className = 'teamacc';
+
+                document.getElementById('teamsjsaomona').className = 'teams';
+                document.getElementById('teamsnamejsaomona').className = 'teamname';
+                document.getElementById('teamstextjsaomona').className = 'teamtext';
+                document.getElementById('teamaccjsaomona').className = 'teamacc';
+            } else {
+                document.getElementById('teamsjstokuzou').className = 'teamsmax';
+                document.getElementById('teamsnamejstokuzou').className = 'teamnamemax';
+                document.getElementById('teamstextjstokuzou').className = 'teamtextmax';
+                document.getElementById('teamaccjstokuzou').className = 'teamaccmax';
+
+                document.getElementById('teamsjsnikkou').className = 'teamsmax';
+                document.getElementById('teamsnamejsnikkou').className = 'teamnamemax';
+                document.getElementById('teamstextjsnikkou').className = 'teamtextmax';
+                document.getElementById('teamaccjsnikkou').className = 'teamaccmax';
+
+                document.getElementById('teamsjsaomona').className = 'teamsmax';
+                document.getElementById('teamsnamejsaomona').className = 'teamnamemax';
+                document.getElementById('teamstextjsaomona').className = 'teamtextmax';
+                document.getElementById('teamaccjsaomona').className = 'teamaccmax';
+            }
+        }
+
+        // ウィンドウサイズが変更されたときにcheckWindowSize関数を呼び出す
+        window.addEventListener('resize', checkWindowSize);
+
+        // ページ読み込み時にも初回チェックを行う
+        checkWindowSize();
     </script>
 </body>
 </html>

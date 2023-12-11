@@ -420,6 +420,11 @@ body{
     background: black;
 }
 
+.teamsmax{
+    margin: 30px;
+    transition: all 0.3s ease;
+}
+
 .teamname{
     transition: all 0.5s;
     user-select: none;
@@ -427,6 +432,17 @@ body{
 
 .teamname:hover{
     transform: rotate(380deg);
+}
+
+.teamnamemax{
+    transition: all 0.5s;
+    user-select: none;
+    text-align: left;
+    color: #4c4c4c;
+}
+
+.teamnamemax:hover{
+    color: white;
 }
 
 .teamtext{
@@ -440,6 +456,12 @@ body{
         font-weight: 900;
         text-shadow: 0 0 20px rgb(255, 255, 255);
     }
+}
+
+.teamtextmax{
+    text-align: right;
+    color: rgb(192, 192, 192);
+    user-select: none;
 }
 
 .teamacc{
@@ -460,10 +482,29 @@ body{
     transition: all 0.3s;
 }
 
+.teamaccmax{
+    position: relative;
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 15px;
+    height: 40px;
+    width: 100px;
+    left: 50%;
+    transform: translate(-50px);
+}
+
+.teamaccmax svg:hover{
+    transform: scale(1.2);
+}
+
+.teamaccmax svg{
+    padding-top: 5px;
+    transition: all 0.3s;
+}
+
 .konamihidden {
     position: fixed;
     transition: all 0.5s;
-    bottom: -1000vh;
+    display: none;
 }
 
 .konamivisible {
@@ -494,11 +535,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #313131;
+    background-color: #4c4c4c;
     font-size: 60px;
     cursor: pointer;
     border-radius: 10px;
     transition: all 0.2s;
+    animation: borderrainbow 4s linear infinite;
 }
 
 .konamiclosebtn:hover{
