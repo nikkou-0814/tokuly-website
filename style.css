@@ -326,7 +326,6 @@ body{
     text-align: center;
     transition: all 0.3s ease;
 }
-
 .navlinks {
     height: 80px;
     border-radius: 20px;
@@ -336,9 +335,17 @@ body{
     background: linear-gradient(to right, #fbff00, #eb3a3a);
     background-size: 200% 100%;
     transition: all 0.3s ease;
-    margin: 30px;
+    margin: auto;
+    margin-top:30px;
+    margin-bottom: 30px;
+    max-width: 700px;
 }
-
+@media (max-width: 600px) {
+    .navlinks{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
 .navlinks:hover {
     animation: gradientAnimation 3s linear infinite;
 }
@@ -374,16 +381,22 @@ body{
 .aboutblock{
     border-radius: 20px;
     display: block;
-    align-items: center;
-    justify-content: center;
     background: linear-gradient(to right, #fbff00, #eb3a3a);
     background-size: 200% 100%;
     transition: all 0.3s ease;
-    margin: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top:20px;
     border: rgb(50, 50, 50) solid 1px;
     padding: 5px;
+    max-width: 600px;
 }
+@media (max-width: 600px) {
+    .aboutblock{
+        margin: 20px;
+    }
 
+}
 .aboutblock:hover {
     animation: gradientAnimation 3s linear infinite;
     transform: scale(1.05);
